@@ -1,0 +1,10 @@
+fastcgi.conf
+fastcgi_params
+koi-utf
+koi-win
+mime.types
+proxy_params
+scgi_params
+snippets/
+uwsgi_params
+win-utf
