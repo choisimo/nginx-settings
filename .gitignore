@@ -8,3 +8,4 @@ scgi_params
 snippets/
 uwsgi_params
 win-utf
+.swap
