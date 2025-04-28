@@ -24,9 +24,19 @@ server {
 
 	# SSL configuration
 	#
-	# listen 443 ssl default_server;
-	# listen [::]:443 ssl default_server;
+	listen 443 ssl default_server;
+	listen [::]:443 ssl default_server;
+	
+	
+	# SSL-certification configuration
 	#
+    	ssl_certificate /etc/letsencrypt/live/nodove.com/fullchain.pem;
+    	ssl_certificate_key /etc/letsencrypt/live/nodove.com/privkey.pem;
+	
+
+	# HTTPS IP ACCESS REJECT
+	# 
+	ssl_reject_handshake on;
 	# Note: You should disable gzip for SSL traffic.
 	# See: https://bugs.debian.org/773332
 	#
